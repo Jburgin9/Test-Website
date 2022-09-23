@@ -1,0 +1,8 @@
+body{
+    background-color: #f0f4c3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
