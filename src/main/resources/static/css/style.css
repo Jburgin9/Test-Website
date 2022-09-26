@@ -1,8 +1,104 @@
 body{
-    background-color: #f0f4c3;
+
 }
 
-.container {
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:active {
+    text-decoration: pink;
+}
+
+a:visited {
+    text-decoration: honeydew;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+hr {
+    margin: 10px 5px 10px 5px;
+    border: 1px solid #000000;
+}
+
+nav {
+    margin: 0 0 0 10px;
+}
+
+.nav-holder {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: black;
+    height: 50px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDQtNTAta284YTNtMjcuanBn.jpg");
+    background-repeat: no-repeat;
+    object-position: center;
+    background-size: cover;
+    width: fit-content;
+    height: 225px;
+    margin: 40px 500px 40px 500px;
+    border-radius: 6px;
+    padding: 10px
+}
+
+p.about-us {
+    font-style: italic;
+    font-size: 20px;
+    font-family: Genea;
+    overflow-wrap: normal;
+    text-align: center;
+    color: white;
+    margin: 5px 0 5px 0;
+}
+
+.btn {
+    margin: 5px 0 0 0;
+}
+
+.plans-section {
     display: flex;
     flex-direction: row;
+    background-color: gainsboro;
+    justify-content: space-evenly;
+    border: darkblue dotted 4px;
+}
+
+.plans-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: crimson dotted 2px;
+}
+
+.plan-card {
+    width: 30rem;
+    padding: 15px;
+    border: cadetblue dashed 10px;
+}
+
+.card-title {
+    font-size: 50px;
+    font-family: Geneva;
+    border: aqua double 8px;
+    text-align: center;
+}
+
+.card-body {
+    border: pink solid 5px;
+    padding: 5px;
 }
