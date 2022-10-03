@@ -35,20 +35,15 @@
 
 <section>
     <div class="plans-section">
-        <img class="" src="https://dayswingtrader.com/wp-content/uploads/2021/04/pexels-george-morina-4960464-1536x1024.jpg"
-             style="width: 400px; height:400px; margin-left: 15%">
+        <img class="plans-img" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
         <section class="plans">
             <div class="plans-container">
                 <c:forEach items="${plans}" var="plan">
                     <div class="plan-card">
                         <div class="card-body">
                             <p class="card-title">${plan.name}</p>
-                            <p class="card-text">${plan.description}</p>
+                            <p class="card-text">${plan.description}<br/>${plan.price}</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Pricing: $${plan.price}</li>
-                            <li class="list-group-item">Tier: ${plan.tier}</li>
-                        </ul>
                     </div>
                 </c:forEach>
             </div>
@@ -56,5 +51,20 @@
     </div>
 </section>
 
+<footer style="background-color: black;">
+    <div class="container p-4">
+        <div class="row">
+            <p style="color: white">
+                DISCLAIMER: WE ARE NOT GUARANTEEING MONEY WITH ANY OF OUR IDEAS. WE ONLY POST WHAT WE
+                ARE DOING AND IT IS ON YOU! TO DECIDE IF YOU WANT TO EXECUTE A TRADE. PLEASE DO YOUR
+                OWN DUE DILIGENCE AND ASK QUESTIONS BEFORE MAKING A MOVE
+            </p>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: black;">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright --></footer>
 </body>
 </html>

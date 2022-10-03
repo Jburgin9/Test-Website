@@ -4,6 +4,7 @@ body{
 
 a {
     color: white;
+    margin: 0 10px 0 10px;
 }
 
 a:link {
@@ -32,6 +33,10 @@ nav {
     margin: 0 0 0 10px;
 }
 
+footer {
+    background-color: black;
+}
+
 .nav-holder {
     display: flex;
     justify-content: center;
@@ -53,7 +58,7 @@ nav {
     height: 225px;
     margin: 40px 500px 40px 500px;
     border-radius: 6px;
-    padding: 10px
+    padding: 10px;
 }
 
 p.about-us {
@@ -73,32 +78,56 @@ p.about-us {
 .plans-section {
     display: flex;
     flex-direction: row;
-    background-color: gainsboro;
     justify-content: space-evenly;
-    border: darkblue dotted 4px;
+    /*border: darkblue dotted 4px;*/
 }
 
 .plans-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: crimson dotted 2px;
+    /*border: crimson dotted 2px;*/
 }
 
 .plan-card {
+    /*border: cadetblue dashed 10px;*/
     width: 30rem;
-    padding: 15px;
-    border: cadetblue dashed 10px;
+    padding: 10px;
+    height: 30rem;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDQtNTAta284YTNtMjcuanBn.jpg");
+    background-repeat: no-repeat;
+    object-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
 }
 
 .card-title {
+    /*border: aqua double 8px;*/
     font-size: 50px;
     font-family: Geneva;
-    border: aqua double 8px;
     text-align: center;
+    border-radius: 1px;
+    color: white;
 }
 
 .card-body {
-    border: pink solid 5px;
+    /*border: pink solid 5px;*/
     padding: 5px;
+}
+
+.card-text {
+    color: white;
+    text-align: center;
+}
+
+
+.plans-img {
+    width: 350px;
+    height:350px;
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
 }
