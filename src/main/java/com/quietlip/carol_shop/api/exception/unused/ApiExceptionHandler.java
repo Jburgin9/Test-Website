@@ -1,4 +1,4 @@
-package com.quietlip.carol_shop.api.exception;
+package com.quietlip.carol_shop.api.exception.unused;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,6 @@ import java.time.ZonedDateTime;
 
 @ControllerAdvice
 public class ApiExceptionHandler {
-
     @ExceptionHandler(value = {ApiRequestException.class})
     public ResponseEntity<Object> RequestExceptionHandler(ApiRequestException requestException){
         HttpStatus badRequest = HttpStatus.BAD_REQUEST;

@@ -1,4 +1,4 @@
-package com.quietlip.carol_shop.api.exception;
+package com.quietlip.carol_shop.api.exception.unused;
 
 
 import org.springframework.http.HttpStatus;

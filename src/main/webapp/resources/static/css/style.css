@@ -37,6 +37,13 @@ footer {
     background-color: black;
 }
 
+label {
+    display: inline-block;
+    width: 200px;
+    margin: 5px 5px 5px 0;
+    text-align: start;
+}
+
 .nav-holder {
     display: flex;
     justify-content: center;

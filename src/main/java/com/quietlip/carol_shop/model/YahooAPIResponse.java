@@ -5,7 +5,8 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class YahooAPIResponse {
-    private Object[] data;
-    private String message;
-    private int status;
+    private String chartName;
+    private String disclaimer;
+    private Object bpi;
+    private Object time;
 }
