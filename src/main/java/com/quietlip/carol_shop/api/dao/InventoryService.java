@@ -1,4 +1,4 @@
-package com.quietlip.carol_shop.api;
+package com.quietlip.carol_shop.api.dao;
 
 import com.quietlip.carol_shop.model.Inventory;
 import lombok.AllArgsConstructor;

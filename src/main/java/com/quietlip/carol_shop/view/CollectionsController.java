@@ -1,6 +1,7 @@
-package com.quietlip.carol_shop.api;
+package com.quietlip.carol_shop.view;
 
-import com.quietlip.carol_shop.api.exception.ApiRequestException;
+import com.quietlip.carol_shop.api.dao.InventoryService;
+import com.quietlip.carol_shop.api.exception.unused.ApiRequestException;
 import com.quietlip.carol_shop.model.Inventory;
 import com.quietlip.carol_shop.model.Plans;
 import lombok.AllArgsConstructor;
