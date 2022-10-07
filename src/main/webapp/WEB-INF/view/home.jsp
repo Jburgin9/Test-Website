@@ -18,6 +18,7 @@
                 <a href="/home" class="home">Home</a>
                 <a href="/home/login" class="login">Login</a>
                 <a href="/home/register" class="register">Register</a>
+                <a href="/home/trades" class="trades">Trades</a>
                 <a href="#" class="principles">Principles</a>
                 <a href="#" class="gameplan">Game Plan</a>
             </nav>
