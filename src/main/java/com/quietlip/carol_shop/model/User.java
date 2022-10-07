@@ -11,6 +11,7 @@ import javax.validation.constraints.*;
 
 @Data
 @AllArgsConstructor
+@Document
 public class User {
     @Id
     private String id;
@@ -20,6 +21,6 @@ public class User {
     private String username;
     @Size(min = 6, max = 20)
     private String password;
-
+    private String type = "basic";
     public User(){}
 }

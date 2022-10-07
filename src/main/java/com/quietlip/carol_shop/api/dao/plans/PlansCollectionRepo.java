@@ -1,4 +1,4 @@
-package com.quietlip.carol_shop.api.dao;
+package com.quietlip.carol_shop.api.dao.plans;
 
 import com.quietlip.carol_shop.model.Plans;
 import org.springframework.data.mongodb.repository.MongoRepository;

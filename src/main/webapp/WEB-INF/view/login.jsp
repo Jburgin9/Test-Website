@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/resources/static/css/style.css">
     <title>Login Page</title>
 </head>
 
@@ -27,7 +27,7 @@
 </section>
 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 5%">
     <h1 style="margin: 0">Login</h1>
-    <form:form action="login" method="get" modelAttribute="username">
+    <form:form action="login" method="post" modelAttribute="loggedInUser">
         <form:label path="username">Enter Username</form:label>
         <form:input path="username"/> <br/>
         <form:label path="password">Enter Password</form:label>
