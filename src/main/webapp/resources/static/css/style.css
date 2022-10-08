@@ -44,6 +44,28 @@ label {
     text-align: start;
 }
 
+th {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+table {
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    border: 2px solid black;
+    font-style: italic;
+}
+/**
+    Custom classes below
+ */
+
 .nav-holder {
     display: flex;
     justify-content: center;
@@ -131,10 +153,38 @@ p.about-us {
     text-align: center;
 }
 
-
 .plans-img {
     width: 350px;
     height:350px;
     margin: 5px 0 5px 0;
     border-radius: 5px;
+}
+
+.trades_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trades_display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: fit-content;
+}
+
+.trades_holder {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.table_header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px;
 }
