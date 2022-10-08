@@ -1,8 +1,10 @@
 package com.quietlip.carol_shop.view;
 
 import com.quietlip.carol_shop.api.dao.plans.PlansService;
+import com.quietlip.carol_shop.api.dao.trades.TradeService;
 import com.quietlip.carol_shop.api.dao.users.UserService;
 import com.quietlip.carol_shop.model.Plans;
+import com.quietlip.carol_shop.model.Trade;
 import com.quietlip.carol_shop.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +23,15 @@ import java.util.List;
 @AllArgsConstructor
 @RequestMapping("/home")
 public class WebsiteController {
+    /**
+     * Data Access Objects below
+     */
     @Autowired
     private final PlansService plansService;
     @Autowired
     private final UserService userServiceDAO;
+    @Autowired
+    private final TradeService tradeServiceDAO;
     @Autowired
     WebClient webClient;
 
@@ -45,14 +52,12 @@ public class WebsiteController {
         model.addAttribute("loggedInUser",newUser);
         return "login";
     }
-
     @PostMapping("/login")
     public String loginVerification(@ModelAttribute User loggedInUser){
         System.out.println("verification called");
         System.out.println(userServiceDAO.findUserByUsername(loggedInUser.getUsername()));
         return "home";
     }
-
     /**
      *
      * Register section
@@ -77,6 +82,23 @@ public class WebsiteController {
      * Trades section
      */
 
+    @GetMapping("/trades")
+    public String showTradePage(Model model){
+        Trade tradeIdea = new Trade();
+        List<Trade> tradeList = tradeServiceDAO.listAllTrades();
+        System.out.println("get called");
+        System.out.println(tradeList);
+        model.addAttribute("displayTrade", tradeList);
+        model.addAttribute("tradeIdea", tradeIdea);
+        return "trades";
+    }
+
+    @PostMapping("/trades")
+    public String submitTradeIdea(@ModelAttribute Trade tradeIdea){
+        System.out.println("post called");
+        tradeServiceDAO.insertTrade(tradeIdea);
+        return "redirect:/home/trades";
+    }
     /**
      *
      * Used methods/codes below
